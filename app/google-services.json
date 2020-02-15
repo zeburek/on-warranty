@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "395461173762",
+    "firebase_url": "https://on-warranty.firebaseio.com",
+    "project_id": "on-warranty",
+    "storage_bucket": "on-warranty.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:395461173762:android:aeea5498e431674dc1bd1b",
+        "android_client_info": {
+          "package_name": "ru.zeburek.onwarranty"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "395461173762-r5nojhkfnkq5d98ksvaa0d65rd99ab8t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ru.zeburek.onwarranty",
+            "certificate_hash": "7b08561f373701461ee68c17544e000bb6f7a853"
+          }
+        },
+        {
+          "client_id": "395461173762-s97ec39f6lsklv7s2or8pkjnh1gmjmu8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWA7GlroD0UM6X8DB3RTaA_vxGhmba-0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "395461173762-s97ec39f6lsklv7s2or8pkjnh1gmjmu8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

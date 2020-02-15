@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:theme="@style/AppTheme"/>
+
+        <EditText
+            android:id="@+id/warrantyStartedAt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="14"
+            android:enabled="false"
+            android:fadingEdge="vertical"
+            android:hint="@string/warranty_field"
+            android:importantForAutofill="no"
+            android:inputType="none"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/datePicker" />
+
+        <RelativeLayout
+            android:id="@+id/warrantyLastsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/warrantyStartedAt">
+
+            <EditText
+                android:id="@+id/warrantyLasts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:fadingEdge="vertical"
+                android:hint="@string/warranty_lasts_for"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal|numberSigned"
+                android:paddingStart="4dp"
+                android:paddingEnd="35dp" />
+
+            <TextView
+                android:id="@+id/warrantyLastsForDesc"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/warrantyLasts"
+                android:layout_alignBottom="@+id/warrantyLasts"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:text="@string/warrantyLastsForHint" />
+
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/warrantyProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:ems="14"
+            android:fadingEdge="vertical"
+            android:hint="@string/warrantyProductName"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/warrantyLastsLayout" />
+
+
+        <Button
+            android:id="@+id/addNewWarrantyBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_new_warranty_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/warrantyProductName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">On Warranty</string>
+    <string name="title_activity_main">Гарантии</string>
+    <string name="title_add_new">Добавить</string>
+    <string name="title_home">Главная</string>
+    <string name="title_settings">Настройки</string>
+    <string name="common_signout_button_text">Выйти</string>
+    <string name="warranty_field">Дата начала гарантии</string>
+    <string name="add_new_warranty_btn">Добавить запись о гарантии</string>
+    <string name="warranty_lasts_for">Гарантия на</string>
+    <string name="warrantyLastsForHint">лет</string>
+    <string name="warrantyProductName">Товар</string>
+    <string name="warranty_info_product_label">Товар:</string>
+    <string name="warranty_info_time_left_label">Гарантия до:</string>
+    <string name="warranty_gone">Закончилась</string>
+</resources>
